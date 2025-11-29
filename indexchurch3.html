@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodux Church | Recupere su Llamado Pastoral</title>
+    <meta name="description" content="La herramienta que cierra la puerta trasera de su iglesia y le permite pastorear corazones, no administrar datos.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de Marca --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        gold: {
+                            500: '#d97706', // Un dorado sobrio para acciones importantes
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fuentes: Merriweather (Estilo Editorial) + Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        /* Oculta la barra de desplazamiento en el mockup para móviles */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-600 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- NAV FLOTANTE DISCRETA --><nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 py-4">
+        <div class="max-w-xl md:max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <span class="font-serif font-bold text-xl text-slate-900">
+                Nodux<span class="text-gold-600"> church</span>
+            </span>
+            <a href="#validacion" class="text-sm font-semibold text-slate-900 hover:text-gold-600 transition-colors">
+                Acceso Fundadores
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO: EL CONFLICTO DE IDENTIDAD --><header class="relative pt-32 pb-20 md:pt-40 md:pb-32 px-6 overflow-hidden bg-slate-900 text-white">
+        <!-- Fondo sutil abstracto --><div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="relative max-w-3xl mx-auto text-center z-10">
+            <p class="text-gold-500 font-bold tracking-widest text-xs uppercase mb-6">
+                Para el pastor que se siente abrumado
+            </p>
+            <h1 class="font-serif text-4xl md:text-6xl font-black leading-tight mb-8 text-shadow">
+                Usted fue llamado a pastorear corazones, <span class="italic font-light text-slate-300 block mt-2">no a administrar hojas de cálculo.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10 font-light">
+                Existe una brecha dolorosa entre el pastor que quiere ser y el administrador que el caos le obliga a ser. <strong class="text-white">Es hora de cerrar esa brecha.</strong>
+            </p>
+            
+            <div class="flex flex-col items-center">
+                <a href="#narrativa-dolor" class="animate-bounce mt-4 cursor-pointer">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+                <p class="text-xs text-slate-400 mt-2">Descubra por qué sucede esto</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NARRATIVA PARTE 1: LA REALIDAD INVISIBLE (EL DOLOR) --><section id="narrativa-dolor" class="py-20 px-6 relative bg-white">
+        <div class="max-w-2xl mx-auto relative z-10">
+            <div class="border-l-4 border-gold-500 pl-6 mb-12">
+                <h2 class="font-serif text-3xl font-bold text-slate-900 mb-4">
+                    Todo comienza un martes cualquiera...
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    Usted está en su oficina orando. De repente, recuerda a la Familia González. Hace semanas no los ve.
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Escena 1 --><div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold">1</div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg">La Búsqueda Frustrada</h3>
+                        <p class="mt-2 text-slate-600">Busca en su celular, luego en una libreta vieja, luego pregunta a su secretaria. Nadie sabe con certeza cuándo fue su última visita o qué pasó con la cirugía de la abuela.</p>
+                    </div>
+                </div>
+
+                <!-- Escena 2 --><div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold">2</div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg">El Descubrimiento Doloroso</h3>
+                        <p class="mt-2 text-slate-600">Al fin consigue el dato. Llama. Nadie contesta. Luego se entera por un tercero: <em>"Pastor, los González se fueron a otra iglesia hace un mes porque sintieron que a nadie le importaban".</em></p>
+                    </div>
+                </div>
+
+                <!-- Escena 3 --><div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold">!</div>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-bold text-slate-900 text-xl">La Culpa Silenciosa</h3>
+                        <p class="mt-2 text-slate-600 italic">Ese momento en la almohada donde se pregunta: "¿Soy un mal pastor? ¿Por qué se me escapan las ovejas entre los dedos?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSICIÓN ALIVIO --><div class="mt-16 p-8 bg-slate-100 rounded-2xl text-center">
+                <p class="font-serif text-xl font-bold text-slate-800 mb-2">Pastor, tengo una buena noticia:</p>
+                <p class="text-slate-600">El problema no es su corazón. El problema no es su falta de amor.</p>
+                <p class="mt-4 text-gold-600 font-bold text-lg">El problema es que está intentando gestionar relaciones espirituales con herramientas de contadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MOCKUP 1: DASHBOARD (Alerta Temprana) --><section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                No lidere a ciegas nunca más.
+            </h2>
+            <p class="text-lg md:text-xl text-slate-700">
+                Imagine despertar cada día sabiendo exactamente quién necesita su atención pastoral.
+            </p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-slate-200">
+            <img src="alertasnodux.png" alt="Dashboard de Nodux.church mostrando alertas de atención y cumpleaños" class="w-full h-auto object-cover">
+        </div>
+        <div class="max-w-3xl mx-auto text-center mt-8">
+            <p class="text-xl text-slate-600 leading-relaxed font-semibold">
+                Su dashboard le muestra las alertas críticas, los cumpleaños y los nuevos visitantes. Siempre.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MOCKUP 2: PERFIL DE MIEMBRO (Historial Inquebrantable) --><section class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-gold-500">
+                Cada historia importa. Que ninguna se pierda.
+            </h2>
+            <p class="text-lg md:text-xl text-slate-300">
+                El corazón de su ministerio es el cuidado personal. Nodux church guarda la memoria de cada interacción pastoral.
+            </p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-slate-700">
+            <img src="perfildemiembroNodux.png" alt="Perfil de miembro en Nodux.church con historial de consejerías y visitas" class="w-full h-auto object-cover">
+        </div>
+        <div class="max-w-3xl mx-auto text-center mt-8">
+            <p class="text-xl text-slate-300 leading-relaxed font-semibold">
+                Un historial cronológico de consejerías, visitas y notas de oración. Siempre disponible para usted y su equipo.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MOCKUP 3: DIRECTORIO (Organización y Agilidad) --><section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Encuentre a quien necesita, en un instante.
+            </h2>
+            <p class="text-lg md:text-xl text-slate-700">
+                Ya sea un líder clave, un nuevo visitante o alguien en riesgo.
+            </p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-slate-200">
+            <img src="directorio de mienbrosnodux.png" alt="Directorio de miembros en Nodux.church con opciones de búsqueda y filtrado" class="w-full h-auto object-cover">
+        </div>
+        <div class="max-w-3xl mx-auto text-center mt-8">
+            <p class="text-xl text-slate-600 leading-relaxed font-semibold">
+                Un directorio inteligente que le permite organizar, filtrar y registrar nuevos miembros con facilidad.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- EL CIERRE: LLAMADO A LA ACCIÓN (TYPEFORM) --><section id="validacion" class="py-24 px-6 bg-slate-900 text-white text-center relative overflow-hidden">
+        <!-- Fondo sutil abstracto --><div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl font-black mb-6 leading-tight text-shadow">
+                ¿Está listo para cerrar la <span class="text-gold-500 underline decoration-gold-200 decoration-4 underline-offset-4">Puerta Trasera</span> de su iglesia?
+            </h2>
+            <p class="text-xl text-slate-300 mb-10 font-light leading-relaxed max-w-2xl mx-auto">
+                Estamos seleccionando a <strong>5 pastores visionarios</strong> para probar Nodux.church antes que nadie y definir el futuro de la herramienta.
+            </p>
+            
+            <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-xl max-w-xl mx-auto">
+                <p class="font-bold text-white mb-6">
+                    Únase a la Lista de Acceso Fundador
+                    <span class="block text-sm font-normal text-slate-400 mt-1">(Solo tomaremos 2 minutos para entender su ministerio)</span>
+                </p>
+                
+                <!-- BOTÓN PRINCIPAL --><a href="https://form.typeform.com/to/EqOp0e9k" target="_blank" class="block w-full bg-gold-600 hover:bg-gold-500 text-white font-bold py-5 px-8 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-lg md:text-xl">
+                    Quiero Recuperar el Cuidado Personal ->
+                </a>
+                
+                <div class="mt-4 flex items-center justify-center gap-2 text-xs text-slate-500">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                    <span>Datos 100% seguros y privados</span>
+                </div>
+            </div>
+
+            <p class="mt-12 font-serif italic text-slate-400 text-lg">
+                "El buen pastor conoce a sus ovejas y las llama por su nombre."
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-10 px-6 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2024 Nodux.church. Diseñado para bendecir.</p>
+    </footer>
+
+</body>
+</html>
+
